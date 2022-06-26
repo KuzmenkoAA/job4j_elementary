@@ -43,7 +43,4 @@ public class ConverterTest {
         Assert.assertEquals(expected, out, eps);
     }
 
-    @Test
-    public void main() {
-    }
 }
