@@ -1,21 +1,20 @@
 package ru.job4j.condition;
-
 public class DummyBot {
 
     public static String answer(String question) {
-        String rsl = "Р­С‚Рѕ СЃС‚Р°РІРёС‚ РјРµРЅСЏ РІ С‚СѓРїРёРє. Р—Р°РґР°Р№С‚Рµ РґСЂСѓРіРѕР№ РІРѕРїСЂРѕСЃ.";
-        if ("РџСЂРёРІРµС‚, Р‘РѕС‚.".equals(question)) {
-            rsl = "РџСЂРёРІРµС‚, СѓРјРЅРёРє.";
-        } else if ("РџРѕРєР°.".equals(question)) {
-            rsl = "Р”Рѕ СЃРєРѕСЂРѕР№ РІСЃС‚СЂРµС‡Рё.";
+        String rsl = "Это ставит меня в тупик. Задайте другой вопрос.";
+        if ("Привет, Бот.".equals(question)) {
+            rsl = "Привет, умник.";
+        } else if ("Пока.".equals(question)) {
+            rsl = "До скорой встречи.";
         }
         return rsl;
     }
 
     public static void main(String[] args) {
-        String rsl = DummyBot.answer("РџСЂРёРІРµС‚, Р‘РѕС‚.");
+        String rsl = DummyBot.answer("Привет, Бот.");
         System.out.println(rsl);
-        rsl = DummyBot.answer("РџРѕРєР°.");
+        rsl = DummyBot.answer("Пока.");
         System.out.println(rsl);
     }
 }
