@@ -24,7 +24,4 @@ public class FitTest {
 
     }
 
-    @Test
-    public void main() {
-    }
 }
