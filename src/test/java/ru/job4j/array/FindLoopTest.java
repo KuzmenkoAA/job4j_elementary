@@ -32,4 +32,16 @@ public class FindLoopTest {
         int expected = 2;
         Assert.assertEquals(expected, result);
     }
+
+    @Test
+    public void whenDiapasonHas2Then1() {
+            int[] data = new int[]{5, 2, 6, 2, 8};
+            int el = 2;
+            int start = 1;
+            int finish = 4;
+            int result = FindLoop.indexInRange(data, el, start, finish);
+            int expected = 1;
+            Assert.assertEquals(expected, result);
+    }
+
 }
