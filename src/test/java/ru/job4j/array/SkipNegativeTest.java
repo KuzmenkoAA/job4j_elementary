@@ -1,7 +1,7 @@
 package ru.job4j.array;
 
-import org.junit.jupiter.api.Test;
-import static org.assertj.core.api.Assertions.assertThat;
+import org.junit.Assert;
+import org.junit.Test;
 
 public class SkipNegativeTest {
     @Test
@@ -15,7 +15,7 @@ public class SkipNegativeTest {
                 {1, 0},
                 {1, 2}
         };
-        assertThat(result).isDeepEqualTo(expected);
+        Assert.assertArrayEquals(expected, result);
     }
 
     @Test
@@ -33,6 +33,6 @@ public class SkipNegativeTest {
                 {1, 0, 3, 0},
                 {1, 2, 0, 0, 5}
         };
-        assertThat(result).isDeepEqualTo(expected);
+        Assert.assertArrayEquals(expected, result);
     }
 }
