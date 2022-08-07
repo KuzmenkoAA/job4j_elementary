@@ -4,9 +4,8 @@ public class MatrixSum {
     public static int sum(int[][] array) {
         int rsl = 0;
         for (int row = 0; row < array.length; row++) {
-            for (int cell = 0; cell <= array[row].length; cell++) {
-                int val = array[row][cell];
-                rsl = row + cell;
+            for (int cell = 0; cell < array[row].length; cell++) {
+                rsl += array[row][cell];
             }
         }
         return rsl;
